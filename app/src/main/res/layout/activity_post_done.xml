@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9EBEE">
+
+    <LinearLayout
+        android:id="@+id/searchFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Successful!"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/success_image"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanks for using Bharatia"
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
+                <Button
+                    android:id="@+id/postDoneShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="share now!"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_rectangle_green"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share the post to get more engagement"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/postDoneHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Go home"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_rectangle_green"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/post_done_title"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/colorPrimaryGreenDark"-->
+        <!--android:textSize="32sp"-->
+        <!--android:layout_margin="10dp"/>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/postDonePostedText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/post_done_tolet_success"-->
+        <!--android:textColor="@color/colorPrimaryGreen"-->
+        <!--android:textSize="28sp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_margin="10dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="@string/post_done_share_for_response"-->
+        <!--android:textColor="@color/colorPrimaryGreen"-->
+        <!--android:textSize="24sp"-->
+        <!--android:layout_margin="10dp"/>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/postFacebook"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:src="@drawable/facebook_oval"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:padding="10dp"-->
+            <!--android:elevation="7dp"-->
+            <!--android:layout_toLeftOf="@+id/postInstagram"/>-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/postInstagram"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:src="@drawable/instagram"-->
+            <!--android:padding="7dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:elevation="7dp"-->
+            <!--android:layout_centerInParent="true"/>-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/postWhatsapp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:src="@drawable/whatsapp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:padding="3dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:elevation="7dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_toRightOf="@id/postInstagram"/>-->
+    <!--</RelativeLayout>-->
+
+
+
+
+    <!--SHARE LAYOUT-->
+
+    <RelativeLayout
+        android:id="@+id/postShareLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="#E9EBEE"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="-400dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/logo_new"
+            android:elevation="5dp"
+            android:layout_centerHorizontal="true"/>
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="5dp"
+            android:background="@drawable/rounded_rectangle"
+            android:layout_centerHorizontal="true"
+            android:minWidth="350dp">
+
+        <ImageView
+                android:id="@+id/postShareImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_rectangle"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/postDetailsShareInfoCard"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:minWidth="320dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:minWidth="100dp">
+
+                    <TextView
+                        android:id="@+id/postShareRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="room"
+                        />
+                    <TextView
+                        android:id="@+id/postShareSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="size" />
+                    <TextView
+                        android:id="@+id/postShareArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:minWidth="100dp">
+
+                    <TextView
+                        android:id="@+id/postSharePostType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FLAT"
+                        android:layout_marginBottom="0dp"/>
+
+                    <TextView
+                        android:id="@+id/postSharePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unknown Time"
+                        android:layout_marginBottom="0dp"/>
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/postShareTime"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Price"-->
+                        <!--/>-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryGreen"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/postDetailsShareInfoCard"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Download the Bharatia Android app to find more details"/>
+
+    </RelativeLayout>
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="visible"-->
+        <!--android:backgroundTint="#fff"-->
+        <!--android:background="#fff"-->
+        <!--android:layout_marginTop="-700dp"-->
+        <!--android:paddingBottom="10dp">-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="350dp"-->
+            <!--android:elevation="7dp"-->
+            <!--app:cardElevation="7dp"-->
+            <!--android:id="@+id/postCard">-->
+            <!---->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_gravity="end|bottom"-->
+                <!--android:gravity="end|bottom">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:gravity="right"-->
+                        <!--android:layout_marginRight="15dp"-->
+                        <!--android:paddingBottom="5dp">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/postShareRoom"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:textColor="@color/colorPrimaryGreen"-->
+                            <!--android:text="room"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/postShareSize"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:textColor="@color/colorPrimaryGreen"-->
+                            <!--android:text="size" />-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/postShareArea"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="22sp"-->
+                            <!--android:textColor="@color/colorPrimaryGreenDark"-->
+                            <!--android:text="Area" />-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:gravity="bottom"-->
+                        <!--android:paddingBottom="5dp">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/postSharePostType"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="30sp"-->
+                            <!--android:textColor="@color/colorPrimaryGreen"-->
+                            <!--android:text="FLAT"-->
+                            <!--android:layout_marginBottom="0dp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/postSharePrice"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Price"-->
+                            <!--android:textSize="22sp"-->
+                            <!--android:textColor="@color/colorPrimaryGreenDark"-->
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@color/colorPrimaryGreen"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:text="Download the Bharatia Android app to find more details"/>-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

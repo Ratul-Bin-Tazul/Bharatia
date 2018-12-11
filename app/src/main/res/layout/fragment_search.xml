@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E9EBEE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+    <LinearLayout
+        android:id="@+id/searchFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Looking For"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryGreen"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true">
+
+                    <FrameLayout
+                        android:id="@+id/searchRent"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="8dp">
+                        <ImageButton
+                            android:id="@+id/searchRentButton"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:text="@string/post_rent"
+                            android:padding="7dp"
+                            android:scaleType="centerCrop"
+                            android:background="@color/fui_transparent"
+                            android:textColor="#fff"
+                            android:src="@drawable/rent" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/searchSale"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp">
+                        <ImageButton
+                            android:id="@+id/searchSaleButton"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="7dp"
+                            android:scaleType="centerCrop"
+                            android:background="@color/fui_transparent"
+                            android:textColor="#fff"
+                            android:src="@drawable/sale" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="3dp">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/post_post_type"-->
+            <!--android:textColor="@color/colorPrimaryGreenDark"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_margin="10dp"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Property Type"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryGreen"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true">
+
+                    <FrameLayout
+                        android:id="@+id/searchFlat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp">
+                            <ImageButton
+                                android:id="@+id/searchFlatButton"
+                                android:layout_width="90dp"
+                                android:text="@string/post_flat"
+                                android:padding="7dp"
+                                android:layout_margin="7dp"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/home"
+                                android:scaleType="centerCrop"
+                                android:textColor="#fff"
+                                android:layout_height="90dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:text="Flat"
+                                android:textColor="@color/colorPrimaryGreen"
+                                android:layout_below="@id/searchFlatButton"/>
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/searchSublet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+                            <ImageButton
+                                android:id="@+id/searchSubletButton"
+                                android:layout_width="90dp"
+                                android:text="@string/post_sublet"
+                                android:padding="7dp"
+                                android:layout_margin="7dp"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/sublet"
+                                android:scaleType="centerCrop"
+                                android:textColor="#fff"
+                                android:layout_height="90dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:text="Sublet"
+                                android:textColor="@color/colorPrimaryGreen"
+                                android:layout_below="@id/searchSubletButton"/>
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/searchHotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+                            <ImageButton
+                                android:id="@+id/searchHotelButton"
+                                android:layout_width="90dp"
+                                android:text="@string/post_hotel"
+                                android:padding="7dp"
+                                android:layout_margin="7dp"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/hotel"
+                                android:scaleType="centerCrop"
+                                android:textColor="#fff"
+                                android:layout_height="90dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:text="Hotel"
+                                android:textColor="@color/colorPrimaryGreen"
+                                android:layout_below="@id/searchHotelButton"/>
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_area"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+                <EditText
+                    android:id="@+id/searchArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:backgroundTint="@color/colorPrimaryGreen"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="7dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--app:cardCornerRadius="3dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<Button-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/search_rent"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:layout_marginRight="2dp"-->
+                    <!--android:background="@drawable/button_left_round"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<Button-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/search_sale"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:background="@drawable/button_right_round"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="7dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--app:cardCornerRadius="3dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/search_post_type"-->
+                <!--android:textColor="@color/colorPrimaryGreenDark"-->
+                <!--android:textSize="24sp"-->
+                <!--android:layout_margin="15dp"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp">-->
+            <!--<Button-->
+                <!---->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/search_flat"-->
+                <!--android:padding="7dp"-->
+                <!--android:layout_margin="7dp"-->
+                <!--android:background="@drawable/button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/search_sublet"-->
+                <!--android:padding="7dp"-->
+                <!--android:layout_margin="7dp"-->
+                <!--android:background="@drawable/button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/search_hotel"-->
+                <!--android:padding="7dp"-->
+                <!--android:layout_margin="7dp"-->
+                <!--android:background="@drawable/button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/post_rooms"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryGreen"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/searchRoomButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/searchRoomSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    app:bsb_hide_bubble="true"
+                    app:bsb_max="0"
+                    app:bsb_min="7"
+                    app:bsb_progress="0"
+                    app:bsb_second_track_color="@color/colorPrimaryGreen"
+                    app:bsb_track_color="#aaaaaa"
+                    app:bsb_is_float_type="false"
+                    app:bsb_section_count="7"
+                    app:bsb_section_text_position="below_section_mark"
+                    app:bsb_show_section_mark="true"
+                    app:bsb_show_section_text="true"
+                    app:bsb_seek_by_section="true"
+                    app:bsb_show_thumb_text="true"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_seek_step_section="true"
+                    app:bsb_second_track_size="5dp"
+                    app:bsb_track_size="7dp"/>
+
+                <TextView
+                    android:id="@+id/searchRoomsSelectedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:text="Selected: 0"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="7dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--app:cardCornerRadius="3dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/search_rooms"-->
+            <!--android:textColor="@color/colorPrimaryGreenDark"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_margin="15dp"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/searchRoomButtonLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:layout_marginBottom="25dp">-->
+            <!--<Button-->
+                <!--android:id="@+id/searchRoomAny"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="@string/search_any"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/button_left_round"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:id="@+id/searchRoom1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="@string/search_1"-->
+                <!--android:background="@drawable/square_button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:id="@+id/searchRoom2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="@string/search_2"-->
+                <!--android:background="@drawable/square_button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:id="@+id/searchRoom3"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="@string/search_3"-->
+                <!--android:background="@drawable/square_button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:id="@+id/searchRoom4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="@string/search_4"-->
+                <!--android:background="@drawable/square_button_style"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:id="@+id/searchRoom5"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="@string/search_5"-->
+                <!--android:background="@drawable/button_right_round"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/searchRooms"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorPrimaryGreenDark"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:hint="@string/search_rooms"-->
+            <!--android:visibility="gone"-->
+            <!--android:padding="10dp"/>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_price"
+                android:textColor="@color/colorPrimaryGreen"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/searchPriceLower"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryGreen"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimaryGreen"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_to"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryGreen"
+                android:layout_weight="0.5"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/searchPriceUpper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryGreen"
+                android:backgroundTint="@color/colorPrimaryGreen"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taka"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimaryGreen"/>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_size"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/searchSizeLower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:backgroundTint="@color/colorPrimaryGreen"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_to"
+                    android:layout_marginTop="15dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:id="@+id/searchSizeUpper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryGreen"
+                    android:backgroundTint="@color/colorPrimaryGreen"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sq Ft"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimaryGreen"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="7dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--app:cardCornerRadius="3dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:layout_marginBottom="20dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!---->
+                <!--android:textColor="@color/colorPrimaryGreen"-->
+                <!--android:textSize="24sp"-->
+                <!--android:layout_margin="15dp"/>-->
+
+            <!--<EditText-->
+                <!---->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryGreenDark"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="@string/search_minimum_sq_ft"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_weight="3"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/search_to"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textSize="24sp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textAlignment="center"/>-->
+            <!--<EditText-->
+                <!---->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryGreenDark"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="@string/search_maximum_sq_ft"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_weight="3"/>-->
+
+        <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_search__button"
+            android:background="@drawable/rounded_rectangle_green"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchResultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+        <Button
+            android:id="@+id/searchBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_back"
+            android:background="@drawable/rounded_rectangle_green"
+            android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/searchCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/searchBackBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="@string/search_0_results_found_matching_your_requirment"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"/>
+
+        <Button
+            android:id="@+id/searchAgainBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_search_again"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/rounded_rectangle_green"
+            android:textColor="#fff" />
+    </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/contactBottomSheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="320dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="10dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/postDetailsCall"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/bottomSheetCallIcon"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_phone_grey600_24dp"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetCallHeading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Make a Call"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetCallIcon"-->
+                <!--android:textColor="@color/colorPrimaryGreen"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetCallMainText"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/post_details_phone_number"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetCallIcon"-->
+                <!--android:layout_below="@+id/bottomSheetCallHeading" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/callArrow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/ic_chevron_right_grey600_36dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#aaa"/>-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/postDetailsMesage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/bottomSheetMessageIcon"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_message_reply_text_grey600_24dp"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetMessageHeading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Send a text message"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetMessageIcon"-->
+                <!--android:textColor="@color/colorPrimaryGreen"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetMessageMainText"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/post_details_phone_number"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetMessageIcon"-->
+                <!--android:layout_below="@+id/bottomSheetMessageHeading" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/ic_chevron_right_grey600_36dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#aaa"/>-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/postDetailsEmail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/bottomSheetMainIcon"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_message_reply_text_grey600_24dp"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetMailHeading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Send an email"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetMainIcon"-->
+                <!--android:textColor="@color/colorPrimaryGreen"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetEmailMainText"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/post_details_phone_number"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetMainIcon"-->
+                <!--android:layout_below="@+id/bottomSheetMailHeading" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/ic_chevron_right_grey600_36dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#aaa"/>-->
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/bottomSheetLocationIcon"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_message_reply_text_grey600_24dp"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetLocationHeading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Navigate to the Address"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetLocationIcon"-->
+                <!--android:textColor="@color/colorPrimaryGreen"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bottomSheetLocationText"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/post_details_phone_number"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_toRightOf="@id/bottomSheetLocationIcon"-->
+                <!--android:layout_below="@+id/bottomSheetLocationHeading" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/ic_chevron_right_grey600_36dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#aaa"/>-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "bharatia.com.bharatia"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 15
+        versionName "2.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:animated-vector-drawable:27.1.0'
+    implementation 'com.android.support:mediarouter-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.1.0'
+    implementation "com.android.support:customtabs:27.1.0"
+    implementation 'com.android.support:support-vector-drawable:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.0'
+    //implementation 'com.google.firebase:firebase-invites:11.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+
+    compile 'com.github.jrvansuita:PickImage:2.1.6'
+
+    implementation 'com.airbnb.android:lottie:2.5.1'
+
+    implementation 'com.google.android.gms:play-services:11.0.4'
+
+    //implementation 'com.google.android.gms:play-services-location:11.0.4'
+    //implementation 'com.google.android.gms:play-services-location:11.0.4'
+
+    //Bottom navigation
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    //implementation 'com.google.firebase:firebase-crash:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.google.firebase:firebase-config:11.0.4'
+    implementation 'com.google.firebase:firebase-invites:11.0.4'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.google.firebase:firebase-appindexing:11.0.4'
+
+    //implementation "com.google.firebase:firebase-auth:2.3.0"
+    implementation "com.google.android.gms:play-services-auth:11.0.4"
+    //implementation 'com.google.firebase:firebase-invites:11.0.4'
+
+    // FirebaseUI for Firebase Auth
+    //implementation 'com.firebaseui:firebase-ui-auth:2.3.0'
+
+    //Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    implementation('com.facebook.android:audience-network-sdk:4.27.0') {
+        exclude group: 'com.google.android.exoplayer'
+    }
+
+    implementation 'com.novoda:merlin:1.1.5'
+
+    //Image Picker
+    implementation 'com.github.jkwiecien:EasyImage:1.3.1'
+
+    //Room select slider
+    implementation 'com.xw.repo:bubbleseekbar:3.16'
+
+    //Image Compresser
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //Image slider
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+
+    //View pager slider indicator
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+
+    //Image picker lib
+    //implementation 'com.zhihu.android:matisse:0.4.3'
+}
+
+apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
+

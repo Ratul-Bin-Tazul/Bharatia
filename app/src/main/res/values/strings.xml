@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name" translatable="false">Bharatia</string>
+    <string name="API_KEY" translatable="false">AIzaSyA1OjjQMHEGs38l7nQ4HcUU0SWO3LD-twA</string>
+    <string name="title_activity_post_feed" translatable="false">PostFeedActivity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="title_activity_test" translatable="false">test</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="pref_file_key" translatable="false">bharatia.com</string>
+    <string name="userEmail" translatable="false">hhh</string>
+
+    <string name="userId" translatable="false">userId</string>
+    <string name="pref_key" translatable="false">com.bharatia.app</string>
+
+    <string name="editRequested" translatable="false">false</string>
+    <string name="editRequestPost" translatable="false">post</string>
+
+    <string name="rentPost" translatable="false">rent</string>
+    <string name="salePost" translatable="false">sale</string>
+    <string name="savedPost" translatable="false">saved</string>
+    <string name="userInfo" translatable="false">user</string>
+    <string name="userPost" translatable="false">userPost</string>
+
+    <string name="locale" translatable="false">en</string>
+
+    <string name="title_activity_direction" translatable="false">DirectionActivity</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+
+    <string name="facebook_application_id" translatable="false">161515444626961</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb161515444626961</string>
+    <string name="login_password">Password</string>
+    <string name="login_email">Email</string>
+    <string name="log_in">Log In</string>
+    <string name="or">Or, Signup With Social Media</string>
+    <string name="login_signup">Don\'t have a an account?</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="signup_username">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="post_item_tk">"Tk: "</string>
+    <string name="post_item_month">" month ago"</string>
+    <string name="post_item_week">" week ago"</string>
+    <string name="post_item_today">Posted today</string>
+    <string name="post_item_room">" rooms"</string>
+    <string name="post_item_sqft">" sq. ft"</string>
+    <string name="post_item_posted_today">Posted today</string>
+    <string name="post_item_days_ago">" days ago"</string>
+    <string name="post_item_weeks_ago">" week ago"</string>
+    <string name="post_item_months_ago">" month  ago"</string>
+    <string name="post_item_uknown_time">Unknown  time</string>
+    <string name="fragment_title_feed">Properties</string>
+    <string name="fragment_title_search">Search</string>
+    <string name="fragment_title_post">Add New Post</string>
+    <string name="fragment_title_saved">Favourites</string>
+    <string name="fragment_title_account">Account</string>
+    <string name="post_done_tolet_edit_success">Your To-Let was Edited</string>
+    <string name="post_done_tk">"TK: "</string>
+    <string name="post_done_room">" rooms"</string>
+    <string name="post_done_sq_ft">" sq. ft"</string>
+    <string name="post_done_success_header">Posted Successfully</string>
+    <string name="post_done_title">Post</string>
+    <string name="post_done_tolet_success">Your To-Let was posted</string>
+    <string name="post_done_share_for_response">Share it to get quicker response</string>
+    <string name="fragment_rent_header">Rent</string>
+    <string name="fragment_sale_header">Sale</string>
+    <string name="map_search_filter">FIlter</string>
+    <string name="map_search_place_text" translatable="false">search for places</string>
+    <string name="search_filter">Filter</string>
+    <string name="search_area">Area</string>
+    <string name="search_type_the_area">Type the area</string>
+    <string name="search_sale">Sale</string>
+    <string name="search_rent">Rent</string>
+    <string name="search_post_type">Post type</string>
+    <string name="search_flat">Flat</string>
+    <string name="search_sublet">Sublet</string>
+    <string name="search_hotel">Hotel</string>
+    <string name="search_any">Any</string>
+    <string name="search_1" translatable="false">1</string>
+    <string name="search_2" translatable="false">2</string>
+    <string name="search_3" translatable="false">3</string>
+    <string name="search_4" translatable="false">4</string>
+    <string name="search_5" translatable="false">5</string>
+    <string name="search_rooms">Rooms</string>
+    <string name="search_price">Price Range</string>
+    <string name="search_minimum_tk">Minimum Tk</string>
+    <string name="search_maximum_tk">Maximum Tk</string>
+    <string name="search_size">Size Range</string>
+    <string name="search_minimum_sq_ft">Minimum sq. ft</string>
+    <string name="search_to">to</string>
+    <string name="search_maximum_sq_ft">Maximum sq. ft</string>
+    <string name="search_search__button">Search</string>
+    <string name="search_back">Back</string>
+    <string name="search_0_results_found_matching_your_requirment">0 results found matching your requirement</string>
+    <string name="search_search_again">Search Again</string>
+    <string name="about_tag_line">A platform to rent, buy and sell properties</string>
+    <string name="about_for_any_queries">For any queries</string>
+    <string name="about_email">Email: upperbound18@gmail.com</string>
+    <string name="about_phone">Phone: +8801521332260</string>
+    <string name="post_details_price">Price</string>
+    <string name="post_details_tk_per_month">Tk</string>
+    <string name="post_details_address">Address</string>
+    <string name="post_details_direction" translatable="false">Direction</string>
+    <string name="post_details_rooms">Room</string>
+    <string name="post_details_room_numbers">" Rooms"</string>
+    <string name="post_details_size">Size</string>
+    <string name="post_details_description">About this property</string>
+    <string name="post_details_contact_info">Contact Info</string>
+    <string name="post_details_call">Call</string>
+    <string name="post_details_phone_number" translatable="false">Phone number</string>
+    <string name="post_details_message">Message</string>
+    <string name="post_details_email_address" translatable="false">Email address</string>
+    <string name="post_details_email">Email</string>
+    <string name="account_username">Username</string>
+    <string name="account_email">Email</string>
+    <string name="account_post_made">post made</string>
+    <string name="account_your_posts">Your Posts</string>
+    <string name="account_no_post">You haven\'t made any post</string>
+    <string name="post_edit_heading">Edit Post</string>
+    <string name="post_rent">Rent</string>
+    <string name="post_sale">Sale</string>
+    <string name="post_post_type">Post Type</string>
+    <string name="post_flat">Flat</string>
+    <string name="post_sublet">Sublet</string>
+    <string name="post_hotel">Hotel</string>
+    <string name="post_rooms">Rooms</string>
+    <string name="post_any">Any</string>
+    <string name="post_1" translatable="false">1</string>
+    <string name="post_2" translatable="false">2</string>
+    <string name="post_3" translatable="false">3</string>
+    <string name="post_4" translatable="false">4</string>
+    <string name="post_5" translatable="false">5</string>
+    <string name="post_size">Property Size</string>
+    <string name="post_size_in_sq_ft">Size (in sq. ft)</string>
+    <string name="post_price">Price</string>
+    <string name="post_price_per_month">Price (per month)</string>
+    <string name="post_area">Area</string>
+    <string name="post_address">Full Address</string>
+    <string name="post_locate" translatable="false">Locate</string>
+    <string name="post_select_property_location">Select your property location in google map. Your current location will be used otherwise</string>
+    <string name="post_description">About this property</string>
+    <string name="post_additional_description">Additional Description</string>
+    <string name="post_phone_no">Phone No.</string>
+    <string name="post_email">Email</string>
+    <string name="post_cover_photo">Feature Image</string>
+    <string name="post_upload" translatable="false">Upload</string>
+    <string name="post_select_cover_photo">Select a good Feature image of the property to attract customers</string>
+    <string name="post_next">Next</string>
+    <string name="post_post_button">Post</string>
+    <string name="saved_no_post">No saved post</string>
+    <string name="post_item_year">" year ago"</string>
+    <string name="post_item_day">" day ago"</string>
+    <string name="post_item_years_ago">year ago</string>
+    <string name="account_number_of_post">" posts made"</string>
+    <string name="post_details_tk">" TK"</string>
+    <string name="post_details_per_month">" per month"</string>
+    <string name="post_details_room">" rooms"</string>
+    <string name="post_details_sq_ft">" sq. ft"</string>
+    <string name="title_activity_drawer_test" translatable="false">DrawerTest</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="fragment_title_my_properties" translatable="false">My Properties</string>
+    <string name="privacy_policy" translatable="false">Upper Bound operates the Bharatia android application which provides the respective
+service. This page is used to inform app users regarding our policies with the collection,
+use, and disclosure of Personal Information if anyone decided to use our Service.
+If you choose to use our Service, then you agree to the collection and use of information
+in relation with this policy. The Personal Information that we collect are used for
+providing and improving the Service. We will not use or share your information with
+anyone except as described in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and
+Conditions, which is accessible at, unless otherwise defined in this Privacy Policy.
+Information Collection and Use
+For a better experience while using our Service, we may require you to provide us with
+certain personally identifiable information, including but not limited to your name, phone
+number and your GPS location. The information that we collect will be used to contact
+or identify you.
+Log Data
+We want to inform you that whenever your app crushes, we collect information that your
+phone sends to us that is called Log Data. This Log Data may include information such
+as your mobile Internet Protocol (“IP”) address, pages of our Service that you visit, the
+reasons behind the crush. When you login through Facebook or Google, your logging
+time, email, profile name and friend list information are taken. Moreover, we use
+permission to READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, INTERNET, CALL_PHONE,
+SEND_SMS, ACCESS_FINE_LOCATION
+Cookies
+Cookies are files with small amount of data that is commonly used an anonymous
+unique identifier. These are sent to your browser from the website that you visit and are
+stored on your computer’s hard drive.
+Our website uses these “cookies” to collection information and to improve our Service.
+You have the option to either accept or refuse these cookies and know when a cookie is
+being sent to your computer. If you choose to refuse our cookies, you may not be able
+to use some portions of our Service.
+Service Providers
+We may employ third-party companies and individuals due to the following reasons:
+
+ To facilitate our Service;
+ To provide the Service on our behalf;
+ To perform Service-related services; or
+ To assist us in analyzing how our Service is used.
+We want to inform our Service users that these third parties have access to your
+Personal Information. The reason is to perform the tasks assigned to them on our
+behalf. However, they are obligated not to disclose or use the information for any other
+purpose.
+Security
+We value your trust in providing us your Personal Information, thus we are striving to
+use commercially acceptable means of protecting it. But remember that no method of
+transmission over the internet, or method of electronic storage is 100% secure and
+reliable, and we cannot guarantee its absolute security.
+Links to Other Sites
+Our Service may contain links to other sites. If you click on a third-party link, you will be
+directed to that site. Note that these external sites are not operated by us. Therefore, we
+strongly advise you to review the Privacy Policy of these websites, tutorial showing how
+to do it. We have no control over, and assume no responsibility for the content, privacy
+policies, or practices of any third-party sites or services.
+Children’s Privacy
+Our Services do not address anyone under the age of 13. We do not knowingly collect
+personal identifiable information from children under 13. In the case we discover that a
+child under 13 has provided us with personal information, we immediately delete this
+from our servers. If you are a parent or guardian and you are aware that your child has
+provided us with personal information, please contact us so that we will be able to do
+necessary actions.
+Changes to This Privacy Policy
+We may update our Privacy Policy from time to time. Thus, we advise you to review this
+page periodically for any changes. We will notify you of any changes by posting the new
+Privacy Policy on this page. These changes are effective immediately, after they are
+posted on this page.
+Contact Us
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to
+contact us.</string>
+</resources>

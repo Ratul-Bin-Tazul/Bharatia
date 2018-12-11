@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#66ffffff</color>
+
+    <color name="colorPrimaryGreen">#00695c</color>
+    <color name="colorPrimaryGreenDark">#011b1d</color>
+    <color name="colorAccent">#308578</color>
+
+    <color name="colorNavBackground">#2a2e43</color>
+
+    <color name="colorTransparentWhite">#77ffffff</color>
+
+    <color name="googleColor">#DB4337</color>
+    <color name="facebookColor">#3b5998</color>
+
+    <color name="navBgColor">#308578</color>
+    <color name="navIconColor">#308578</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="fui_transparent">#00ffffff</color>
+</resources>

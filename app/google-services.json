@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "project_number": "799002899391",
+    "firebase_url": "https://bharatia-1515340548840.firebaseio.com",
+    "project_id": "bharatia-1515340548840",
+    "storage_bucket": "bharatia-1515340548840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799002899391:android:bfee7875bb408a3d",
+        "android_client_info": {
+          "package_name": "bharatia.com.bharatia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799002899391-gthtv775s62r9jm6cbt6n6p40ufhvp4k.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "799002899391-ha6nnd3e2h00a5seh444q7v5gauhce13.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "799002899391-0pv3tsg32ma6cjkg7e1d0ev51sfamb9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bharatia.com.bharatia",
+            "certificate_hash": "dff0b4f509056454c5b7494eaa0aa17ec7565891"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXUIoTf_vFwZaNspRAnPeHyZ_AzCUL4aU"
+        },
+        {
+          "current_key": "AIzaSyCavMRwJEBtPc7QJGOd4wRHGMRcE09UFX4"
+        },
+        {
+          "current_key": "AIzaSyDj-wAvfiUwHNUxPX2dtmI5MfsdfPNXvVI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799002899391-gthtv775s62r9jm6cbt6n6p40ufhvp4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
